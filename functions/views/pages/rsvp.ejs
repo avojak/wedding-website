@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../partials/head %>
+  </head>
+
+  <body>
+
+    <!-- Caligrapy header -->
+    <section class="row">
+      <!-- TODO: Should this be a header tag? -->
+      <% include ../partials/header %>
+    </section>
+
+    <!-- Navigation links -->
+    <section class="row">
+      <% include ../partials/navbar %>
+    </section>
+
+    <!-- RSVP -->
+    <section class="row" id="rsvp">
+      <div class="container">
+        <script type="text/javascript" src="https://app.rsvpify.com/embed/500048523"></script>
+        <script type="text/javascript" src="https://app.rsvpify.com/js/iframeResizer.min.js"></script>
+        <script type="text/javascript">iFrameResize({autoResize: true,heightCalculationMethod: 'max',enablePublicMethods: true}, "#RSVPifyIFrame");</script>
+      </div>
+    </section>
+
+  </body>
+
+  <footer>
+    <% include ../partials/footer %>
+  </footer>
+
+</html>
