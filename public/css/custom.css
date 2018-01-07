@@ -24,21 +24,30 @@ body {
   width: 100%;
 }
 
+#caligraphy-desktop {
+  width: 100%;
+  height: auto;
+}
+
+#caligraphy-mobile {
+  width: 100%;
+  height: auto;
+}
+
 /* Display either the desktop or mobile version of the caligraphy */
 @media (min-width: 992px) {
-  #caligraphy-desktop {
-    display: inline-block;
-  }
   #caligraphy-mobile {
     display: none;
+  }
+  #caligraphy-desktop {
+    display: block;
   }
 }
 @media (max-width: 991px) {
+  #caligraphy-mobile {
+    display: block;
+  }
   #caligraphy-desktop {
     display: none;
-  }
-  #caligraphy-mobile {
-    display: inline-block;
-    width: 100%;
   }
 }
