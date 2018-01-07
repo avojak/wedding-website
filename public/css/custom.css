@@ -1,3 +1,5 @@
+/* Custom CSS to supplement or override the template */
+
 body {
   background-color: #E5E5E5;
 }
@@ -22,10 +24,21 @@ body {
   width: 100%;
 }
 
-@media (min-width: 768px) {
-
+/* Display either the desktop or mobile version of the caligraphy */
+@media (min-width: 992px) {
+  #caligraphy-desktop {
+    display: inline-block;
+  }
+  #caligraphy-mobile {
+    display: none;
+  }
 }
-
-@media (max-width: 767px) {
-
+@media (max-width: 991px) {
+  #caligraphy-desktop {
+    display: none;
+  }
+  #caligraphy-mobile {
+    display: inline-block;
+    width: 100%;
+  }
 }
