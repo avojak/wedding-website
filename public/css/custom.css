@@ -1,0 +1,31 @@
+body {
+  background-color: #E5E5E5;
+}
+
+.navbar .navbar-nav {
+  /* display: inline-block; */
+  float: none;
+  vertical-align: top;
+  text-align: center;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.sticky.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
