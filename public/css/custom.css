@@ -4,6 +4,7 @@ body {
   background-color: #E5E5E5;
 }
 
+/* Navbar */
 .navbar .navbar-nav {
   /* display: inline-block; */
   float: none;
@@ -15,6 +16,7 @@ body {
   text-align: center;
 }
 
+/* Sticky navbar */
 .sticky.is-sticky {
   position: fixed;
   left: 0;
@@ -24,6 +26,7 @@ body {
   width: 100%;
 }
 
+/* Caligraphy vectors */
 #caligraphy-desktop {
   width: 100%;
   height: auto;
@@ -50,4 +53,29 @@ body {
   #caligraphy-desktop {
     display: none;
   }
+}
+
+/* Parallax effect */
+.parallax-img-1, .parallax-img-2, .parallax-img-3 {
+  position: relative;
+  opacity: 0.6;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-img-1 {
+  background-image: url("../img/lake.jpg");
+  min-height: 100%;
+}
+
+.parallax-img-2 {
+  background-image: url("../img/coffee.jpg");
+  min-height: 600px;
+}
+
+.parallax-img-3 {
+  background-image: url("../img/ring.jpg");
+  min-height: 600px;
 }
