@@ -78,7 +78,7 @@ body:after {
   background: linear-gradient(
       rgba(255, 255, 255, 0.75),
       rgba(255, 255, 255, 0.75)
-    ), url(../img/lake.jpg) center center;
+    ), url(../img/coffee.jpg) center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
