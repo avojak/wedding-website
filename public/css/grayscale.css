@@ -202,17 +202,25 @@ a:focus, a:hover {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
 .btn-default {
-  color: #42DCA3;
-  border: 1px solid #42DCA3;
-  background-color: transparent; }
-  .btn-default:focus, .btn-default:hover {
-    color: black;
-    border: 1px solid #42DCA3;
-    outline: none;
-    background-color: #42DCA3; }
+  /* color: #42DCA3; */
+  color: rgba(0, 0, 0, .8);
+  /* border: 1px solid #42DCA3; */
+  border: 1px solid rgba(0, 0, 0, .8);
+  background-color: transparent;
+  padding: 5px 10px 5px 10px;
+}
+
+.btn-default:focus, .btn-default:hover {
+  color: black;
+  /* border: 1px solid #42DCA3; */
+  border: 1px solid black;
+  outline: none;
+  /* background-color: #42DCA3; */
+}
 
 ul.banner-social-buttons {
   margin-top: 0; }
