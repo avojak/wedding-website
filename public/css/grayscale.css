@@ -57,8 +57,10 @@ a {
 #mainNav .navbar-toggler {
   font-size: 14px;
   padding: 11px;
-  color: white;
-  border: 1px solid white;
+  /* color: white; */
+  color: rgba(0, 0, 0, .5);
+  /* border: 1px solid white; */
+  border: 1px solid rgba(0, 0, 0, .5);
 }
 #mainNav .navbar-brand {
   font-weight: 700;
