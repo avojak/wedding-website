@@ -211,7 +211,7 @@ a:focus, a:hover {
   /* border: 1px solid #42DCA3; */
   border: 1px solid rgba(0, 0, 0, .8);
   background-color: transparent;
-  padding: 5px 10px 5px 10px;
+  padding: 7px 12px 7px 12px;
 }
 
 .btn-default:focus, .btn-default:hover {
