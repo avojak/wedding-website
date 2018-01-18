@@ -86,6 +86,10 @@ body:after {
   height: auto;
 }
 
+section h2 {
+  margin-bottom: 50px; /* TODO: Play with this a bit once caligraphy is added */
+}
+
 /* Display either the desktop or mobile version of the caligraphy */
 @media (min-width: 992px) {
   #caligraphy-mobile {
