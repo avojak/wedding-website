@@ -53,7 +53,11 @@ body:after {
 /* @media (min-width: 992px) { */
   nav.sticky.is-sticky {
     background-color: rgba(255, 255, 255, 0.75) !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+  }
+
+  a.nav-link {
+    /* color:black; */
   }
 /* } */
 /* @media (max-width: 991px) {
