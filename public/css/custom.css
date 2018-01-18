@@ -35,6 +35,11 @@ body:after {
   text-align: center;
 }
 
+/* .navbar-light {
+  background-color: transparent;
+  border-bottom: 0px;
+} */
+
 /* Sticky navbar */
 .sticky.is-sticky {
   position: fixed;
