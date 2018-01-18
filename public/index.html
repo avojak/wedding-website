@@ -74,8 +74,6 @@
       </div>
     </header>
 
-
-
     <!-- Wedding Section -->
     <section id="wedding" class="content-section text-center">
       <div class="container">
@@ -97,8 +95,6 @@
         </div>
       </div>
     </section>
-
-    <section class="parallax-img-1"></section>
 
     <!-- Accomodations Section -->
     <section id="accomodations" class="content-section text-center">
@@ -125,8 +121,6 @@
       </div>
     </section>
 
-    <section class="parallax-img-2"></section>
-
     <!-- Registry Section -->
     <section id="registry" class="content-section text-center">
       <div class="container">
@@ -149,8 +143,6 @@
         </div>
       </div>
     </section>
-
-    <section class="parallax-img-3"></section>
 
     <!-- RSVP Section -->
     <section id="rsvp" class="content-section text-center">
@@ -232,39 +224,6 @@
           // On page load
           stickyToggle(sticky, stickyWrapper, $(window));
         });
-      });
-
-      $(window).scroll(function(){
-        // var fromTopPx = 200; // distance to trigger
-        // var scrolledFromtop = $(window).scrollTop();
-        // if(scrolledFromtop > fromTopPx){
-        //     $('body').addClass('scrolled');
-        // }else{
-        //     $('body').removeClass('scrolled');
-        // }
-
-        var trigger1 = $('#wedding').offset().top; // distance to trigger
-        var trigger2 = $('#accomodations').offset().top;
-        var trigger3 = $('#registry').offset().top;
-
-        var scrolledFromtop = $(window).scrollTop();
-        if (scrolledFromtop > trigger1 && scrolledFromtop <= trigger2) {
-          $('body').addClass('scrolled1');
-          $('body').removeClass('scrolled2');
-          $('body').removeClass('scrolled3');
-        } else if (scrolledFromtop > trigger2 && scrolledFromtop <= trigger3) {
-          $('body').addClass('scrolled2');
-          $('body').removeClass('scrolled1');
-          $('body').removeClass('scrolled3');
-        } else if (scrolledFromtop > trigger3){
-          $('body').addClass('scrolled3');
-          $('body').removeClass('scrolled1');
-          $('body').removeClass('scrolled2');
-        } else {
-          $('body').removeClass('scrolled1');
-          $('body').removeClass('scrolled2');
-          $('body').removeClass('scrolled3');
-        }
       });
     </script>
 

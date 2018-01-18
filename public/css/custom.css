@@ -4,6 +4,25 @@ body {
   background-color: #E5E5E5;
 }
 
+/* Cover background image */
+body:after {
+  content:"";
+  position:fixed;
+  top:0;
+  height:100vh;
+  left:0;
+  right:0;
+  z-index:-1;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ), url(../img/coffee.jpg) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* Navbar */
 .navbar .navbar-nav {
   /* display: inline-block; */
@@ -55,152 +74,4 @@ body {
   #caligraphy-desktop {
     display: none;
   }
-}
-
-/* Parallax effect */
-/* .parallax-img-1, .parallax-img-2, .parallax-img-3 {
-  position: relative;
-  opacity: 0.8;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
-body:after {
-  content:"";
-  position:fixed;
-  top:0;
-  height:100vh;
-  left:0;
-  right:0;
-  z-index:-1;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ), url(../img/coffee.jpg) center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-/* body.scrolled1:after {
-  content:"";
-  position:fixed;
-  top:0;
-  height:100vh;
-  left:0;
-  right:0;
-  z-index:-1;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ), url(../img/coffee.jpg) center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-body.scrolled2:after {
-  content:"";
-  position:fixed;
-  top:0;
-  height:100vh;
-  left:0;
-  right:0;
-  z-index:-1;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ), url(../img/lake.jpg) center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-body.scrolled3:after {
-  content:"";
-  position:fixed;
-  top:0;
-  height:100vh;
-  left:0;
-  right:0;
-  z-index:-1;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ), url(../img/ring.jpg) center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
-
-.parallax-img-1::after, .parallax-img-2::after, .parallax-img-3::after {
-  /* content:"";
-  position:fixed;
-  top:0;
-  height:100vh;
-  left:0;
-  right:0;
-  z-index:-1;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ), url(../img/lake.jpg) center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-}
-
-.parallax-img-1::after {
-  /* background-image: url("../img/lake.jpg"); */
-  /* background: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ), url(../img/lake.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
-  /* background-size: cover; */
-
-  min-height: 100%;
-  /* z-index:-1; */
-}
-
-.parallax-img-2::after {
-  /* background-image: url("../img/coffee.jpg"); */
-  /* background: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ), url(../img/coffee.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
-  /* background-size: cover; */
-
-  min-height: 600px;
-  /* z-index:-2; */
-}
-
-.parallax-img-3::after {
-  /* background-image: url("../img/ring.jpg"); */
-  /* background: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ), url(../img/ring.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
-  /* background-size: cover; */
-
-  min-height: 600px;
-  /* z-index:-3; */
 }
