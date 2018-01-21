@@ -108,6 +108,12 @@ section h2 {
   }
 }
 
+/* Registry Links */
+.registry-link {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
 /* RSVP Embedded */
 #rsvp-embed {
   padding-top: 5px;
