@@ -73,37 +73,49 @@ body:after {
 } */
 
 
-/* Caligraphy vectors */
-#caligraphy-desktop {
+/* calligraphy vectors */
+#calligraphy-desktop {
   /* margin-top: 0%; */
   width: 100%;
   height: auto;
 }
 
-#caligraphy-mobile {
+#calligraphy-mobile {
   margin-top: 20%;
   width: 100%;
   height: auto;
 }
 
-section h2 {
-  margin-bottom: 50px; /* TODO: Play with this a bit once caligraphy is added */
+/* Section heading calligraphy */
+@media (min-width: 992px) {
+  .calligraphy-header {
+    height: 130px;
+  }
+}
+@media (max-width: 991px) {
+  .calligraphy-header {
+    height: 100px;
+  }
 }
 
-/* Display either the desktop or mobile version of the caligraphy */
+section img {
+  margin-bottom: 50px; /* TODO: Play with this a bit once calligraphy is added */
+}
+
+/* Display either the desktop or mobile version of the calligraphy */
 @media (min-width: 992px) {
-  #caligraphy-mobile {
+  #calligraphy-mobile {
     display: none;
   }
-  #caligraphy-desktop {
+  #calligraphy-desktop {
     display: block;
   }
 }
 @media (max-width: 991px) {
-  #caligraphy-mobile {
+  #calligraphy-mobile {
     display: block;
   }
-  #caligraphy-desktop {
+  #calligraphy-desktop {
     display: none;
   }
 }
@@ -114,6 +126,15 @@ section h2 {
   margin-bottom: 12px;
 }
 
+.registry-link img {
+  width: 140px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
 /* RSVP Embedded */
 #rsvp-embed {
   padding-top: 5px;
@@ -121,7 +142,7 @@ section h2 {
 }
 
 @media (max-width: 991px) {
-  .caligraphy-wrapper {
+  .calligraphy-wrapper {
     margin-bottom: 15px;
   }
 }
