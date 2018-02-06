@@ -88,6 +88,9 @@ header #calligraphy-desktop {
   .calligraphy-header {
     height: 100px;
   }
+  .calligraphy-wrapper {
+    margin-bottom: 15px;
+  }
 }
 
 section img {
@@ -148,10 +151,4 @@ section img {
 #rsvp-embed {
   padding-top: 5px;
   height: 100%;
-}
-
-@media (max-width: 991px) {
-  .calligraphy-wrapper {
-    margin-bottom: 15px;
-  }
 }
