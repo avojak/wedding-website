@@ -25,6 +25,14 @@ body:after {
   background-size: cover;
 }
 
+h3 {
+  font-weight: 400;
+  font-size: 16px;
+  font-style: italic;
+  font-family: 'Alegreya SC', serif;
+  margin: 35px 0 35px;
+}
+
 /*
   ======================================================
   Navbar
@@ -145,10 +153,24 @@ section img {
 
 /*
   ======================================================
+  RSVP Section
+  ======================================================
+*/
+#rsvp-button {
+  margin-bottom: 50px;
+}
+
+/*
+  ======================================================
   RSVP Page
   ======================================================
 */
 #rsvp-embed {
   padding-top: 5px;
   height: 100%;
+}
+
+#home-button {
+  margin-top:20px;
+  margin-bottom:40px;
 }
