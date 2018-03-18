@@ -1,14 +1,24 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  // This is bad...
+  var desktopOffsets = new Map();
+  desktopOffsets.set('wedding', 40);
+  desktopOffsets.set('accommodations', 80);
+  desktopOffsets.set('registry', -48);
+  desktopOffsets.set('rsvp', 30);
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      var name = this.hash.slice(1);
+      target = target.length ? target : $('[name=' + name + ']');
       if (target.length) {
+        var scrollPosition = target.offset().top;
+        var scrollOffset = $(window).width() < 992 ? 60 : desktopOffsets.get(name);
         $('html, body').animate({
-          scrollTop: (target.offset().top - 48)
+          scrollTop: (scrollPosition + scrollOffset)
         }, 1000, "easeInOutExpo");
         return false;
       }
